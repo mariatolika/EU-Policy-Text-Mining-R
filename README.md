@@ -45,8 +45,8 @@ ggplot(top_terms, aes(term, beta, fill = factor(topic))) +
   geom_col(show.legend = FALSE) +
   facet_wrap(~ topic, scales = "free") +
   coord_flip() +
-  labs(title = "Θεματική ανάλυση πολιτικών κειμένων (LDA)",
-       x = "Όροι", y = "Πιθανότητα (beta)") +
+  labs(title = "Thematic analysis of political texts (LDA)",
+       x = "Terms", y = "Odds (beta)") +
   theme_minimal()
 
 # 6. Create a Wordcloud for an overall perspective
